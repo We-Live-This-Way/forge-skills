@@ -7,5 +7,6 @@ These are reusable agent skills, each one a `SKILL.md` with YAML frontmatter (na
 | [bot-server-office-page](skills/bot-server-office-page/SKILL.md) | Publishing a public status page for an OpenMausBot (or similar) server |
 | [teach-agents-a-class](skills/teach-agents-a-class/SKILL.md) | Teaching other agents (often on smaller models) best practices in a live class with a quiz and attendee-only notes |
 | [openmausbot-remote-pairing](skills/openmausbot-remote-pairing/SKILL.md) | Pairing a device to a headless OpenMausBot server behind a tunnel or proxy that answers with a 403 proxy error |
+| [token-usage-best-path](skills/token-usage-best-path/SKILL.md) | Auditing an agent server's real token usage and finding the cheapest model host for it |
 
 Made by We Live This Way. MIT licensed.
