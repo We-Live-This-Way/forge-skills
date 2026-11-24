@@ -1,0 +1,34 @@
+You will be given one or more screenshots of delivery app interfaces (Roadie, etc.) showing order information and delivery details.
+
+For each delivery, extract the following fields and output them as a single line in this exact format:
+
+[Date] - [Recipient Name] - [Full Order Number(s)] - [Street Address] [City]
+
+Rules:
+
+· Date: Use today's date in M_D format (e.g., April 13 = 4_13).
+· Recipient Name: Take the primary name from the delivery screen (e.g., "Ashley Rinaldi", "christopher.j."). Preserve capitalization exactly as shown.
+· Full Order Number(s):
+  · If the screenshot shows an OSN + Order pair (e.g., E5468 and 200014546045468), use the full Order number (the longer one, typically starting with 20001...).
+  · If there are two separate orders for the same recipient, list both full order numbers separated by a comma and a space.
+  · If the screenshot shows a WH or WN number, use that as the full order number.
+· Street Address & City: Extract the street address and city from the delivery location. Exclude state and ZIP code. Include apartment/unit numbers if present.
+· Separator: Use space-dash-space ( - ) between each field.
+
+Output only the resulting string. Do not include any introductory text, explanations, summaries, or conversational filler.
+
+Example input (screenshot showing):
+
+```
+4:40 PM drop-off
+Nora A.
+970 Rainberry Lake Dr Delray Beach, FL 33445
+OSN: E4163
+Order: 200014807194163
+```
+
+Example output:
+4_13 - Nora A. - 200014807194163 - 970 Rainberry Lake Dr Delray Beach
+
+If multiple order numbers exist for one recipient, output like:
+4_13 - Beth D. - 200014424831811, 200014687852088 - 46 Bethesda Park Cir Boynton Beach

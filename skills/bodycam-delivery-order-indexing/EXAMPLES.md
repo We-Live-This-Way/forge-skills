@@ -1,7 +1,11 @@
 # Example prompts
 
-Use these when asking an agent to run [youtube-bulk-rename-from-orders](SKILL.md).
+Use these when asking an agent to run [bodycam-delivery-order-indexing](SKILL.md).
 
+The skill folder also has ready-to-use screenshot prompts a bot can read straight from `prompts/`: `preindex.prp` is for drop-off screenshots, and `preindexpickup.prp` is for "Orders for Pickup" screens.
+
+- "Here are today's drop-off screenshots. Index them with the bodycam delivery indexing skill."
+- "Index this pickup screen for me."
 - "Rename my last 50 bodycam videos that are just numbers. The full order info is in this WhatsApp export."
 - "Some of my YouTube titles are only the last 4 of the order number. Match them to my order log and show me a preview before you change anything."
 - "Keep going on the YouTube renames from yesterday. Do as many as today's quota allows, exact matches only."

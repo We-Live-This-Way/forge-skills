@@ -1,0 +1,30 @@
+**How to extract and format pickup-order lists from these screenshots (exact process to give another AI):**
+
+1. Look at the screenshot. It shows a dark-themed mobile app screen titled "Orders for Pickup".
+2. At the top-left corner, there is a timestamp and date (e.g., "8:31 Wed, Dec 3" or "9:20 Wed, Dec 3").
+   → Take the month and day only and format it as MM_DD (e.g., 12_03).
+
+3. Scroll through every visible order row (from top to bottom in the exact order they appear).
+
+4. For each row, extract:
+   - The customer's full name (it's written below the order number, usually in normal capitalization or ALL CAPS).
+   - The order number / tracking ID that appears directly above or next to the name (usually starts with WH followed by digits, or sometimes a different prefix like H0224-…).
+
+5. Build the output string in this exact repeating pattern, using " - " (space-dash-space) as separator:
+   [MM_DD] - [Name1] - [OrderID1] - [Name2] - [OrderID2] - [Name3] - [OrderID3] …
+   (no extra spaces at the beginning or end, no trailing dash).
+
+6. If a name is in all caps in the screenshot, keep it exactly as shown (do not convert to title case).
+7. If an order has extra info like "Locker Code: 271193" or "X items", ignore everything except the name and the main order ID.
+8. Only include orders that are fully visible in the screenshot (never guess or add partially cut-off rows).
+
+**Example input screenshot → output:**
+Screenshot date = Dec 3 → 12_03
+Visible rows (top to bottom):
+- Gabriela Ferreira → WH17084694
+- Heather Morrison → WH17137173
+- Jose Marin → WH17160522
+- SARAH COLLINS → WH17028314
+
+Resulting string:
+12_03 - Gabriela Ferreira - WH17084694 - Heather Morrison - WH17137173 - Jose Marin - WH17160522 - SARAH COLLINS - WH17028314
