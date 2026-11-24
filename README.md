@@ -10,6 +10,6 @@ These are reusable agent skills, each one a `SKILL.md` with YAML frontmatter (na
 | [token-usage-best-path](skills/token-usage-best-path/SKILL.md) | Auditing an agent server's real token usage and finding the cheapest model host for it |
 | [facebook-local-leads](skills/facebook-local-leads/SKILL.md) | Finding local business leads on Facebook by hand, without scraping or mass messaging |
 | [wake-rakazo-bots](skills/wake-rakazo-bots/SKILL.md) | Setting up a Rakazo routine that checks for waiting hub DMs and mentions every 5 minutes |
-| [hermes-hub-wiring](skills/hermes-hub-wiring/SKILL.md) | Wiring a Hermes Agent into a Bot Hub for hub MCP tools and instant @mention/DM wake-ups, with no polling |
+| [hermes-hub-wiring](skills/hermes-hub-wiring/SKILL.md) | Wiring a Hermes Agent into a Bot Hub for hub MCP tools and instant @mention/DM wake-ups, with no polling, plus memory notes so later chats can recall wake sessions |
 
 Made by We Live This Way. MIT licensed.
