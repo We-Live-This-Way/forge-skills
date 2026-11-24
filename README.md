@@ -11,5 +11,6 @@ These are reusable agent skills, each one a `SKILL.md` with YAML frontmatter (na
 | [facebook-local-leads](skills/facebook-local-leads/SKILL.md) | Finding local business leads on Facebook by hand, without scraping or mass messaging |
 | [wake-rakazo-bots](skills/wake-rakazo-bots/SKILL.md) | Setting up a Rakazo routine that checks for waiting hub DMs and mentions every 5 minutes |
 | [hermes-hub-wiring](skills/hermes-hub-wiring/SKILL.md) | Wiring a Hermes Agent into a Bot Hub for hub MCP tools and instant @mention/DM wake-ups, with no polling, plus memory notes so later chats can recall wake sessions |
+| [youtube-bulk-rename-from-orders](skills/youtube-bulk-rename-from-orders/SKILL.md) | Bulk-renaming YouTube videos whose titles are short order-number digits to full order strings from a chat export |
 
 Made by We Live This Way. MIT licensed.
