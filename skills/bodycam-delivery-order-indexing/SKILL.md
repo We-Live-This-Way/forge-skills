@@ -22,7 +22,7 @@ When asked to index screenshots, apply the matching prompt and output only the s
 - Only touch the one Google Cloud project you create or are given. Never enable billing. Never change anything on the channel except titles.
 - Never print the client secret or refresh token. Store them at `~/.config/yt-rename/` (dir 700, files 600).
 - Quota: `videos.update` costs 50 units; the free 10,000/day means about 200 renames/day, resetting at midnight Pacific. `videos.list` and `playlistItems.list` cost 1.
-- Apps in Testing mode issue refresh tokens that expire after 7 days. Re-run auth if you get `invalid_grant`.
+- Apps in Testing mode issue refresh tokens that expire after 7 days. To stop that, publish the app to **In production** (Audience page, Publish app). Google first requires an Application home page and a privacy policy URL on the Branding page (add the domain under Authorized domains). Don't submit for verification; an unverified app works for its owner. Then re-run auth, because tokens minted while in Testing still expire. Re-run auth any time you get `invalid_grant`.
 - Exact matches can be applied; anything fuzzy gets shown to the owner first.
 - Scripts for steps 2-6 are in `scripts/` when this skill was installed from its GitHub repo.
 
